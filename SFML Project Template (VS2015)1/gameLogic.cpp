@@ -70,6 +70,8 @@ void gameLogic::gravity(std::vector<entity>& editEntityVector) {
 			//Add some bounce effect on ground!?
 			//lets do a test on the random move func. i wanna see what the movement loks like with gravity thingy. must move wierd hehe
 
+			//ADDED A LINE TO TRY GIT
+
 			}
 		
 		
