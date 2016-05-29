@@ -67,7 +67,7 @@ void hitDetection::update(gui& editGui,mouse& editMouse,sf::RenderWindow& rw, st
 				//	deleteiterator editEntityVector.erase();
 				//	while(deleteiterator)
 					
-					editEntityVector.erase(itr);   // vector.empty  to protect against deletion when 0 elements.
+					editEntityVector.erase(iTr);   // vector.empty  to protect against deletion when 0 elements.
 
 					//editVe
                     
