@@ -1,0 +1,7 @@
+﻿  hitDetection.cpp
+c:\users\challe\documents\visual studio 2015\projects\sfml project template (vs2015)1\sfml project template (vs2015)1\hitdetection.cpp(21): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+c:\users\challe\documents\visual studio 2015\projects\sfml project template (vs2015)1\sfml project template (vs2015)1\hitdetection.cpp(22): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+c:\users\challe\documents\visual studio 2015\projects\sfml project template (vs2015)1\sfml project template (vs2015)1\hitdetection.cpp(48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\challe\documents\visual studio 2015\projects\sfml project template (vs2015)1\sfml project template (vs2015)1\hitdetection.cpp(84): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\challe\documents\visual studio 2015\projects\sfml project template (vs2015)1\sfml project template (vs2015)1\hitdetection.cpp(90): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  SFML Project Template (VS2015)1.vcxproj -> C:\Users\Challe\Documents\Visual Studio 2015\Projects\SFML Project Template (VS2015)1\Debug\SFML Project Template (VS2015)1.exe
