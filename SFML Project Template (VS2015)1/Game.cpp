@@ -59,11 +59,11 @@ int Game::start(){
         //Run and update stuff
         Editor.runEditor(Mouse,window);
         Editor.update();
-        hD.update(Gui, Mouse, window, entityVector, Editor, RandomFun);
+        hD.update(Gui, Mouse, window, entityVector, Editor, RandomFun,GameLogic);
         Mouse.mousePosition(window);
         Gui.update(Mouse, entityVector);
         GameLogic.update(entityVector);
-        RandomFun.update(Editor,Mouse,entityVector, RandomFun);
+        RandomFun.update(Editor,Mouse,entityVector, RandomFun, GameLogic);
         //End
 
         while (window.pollEvent(event))

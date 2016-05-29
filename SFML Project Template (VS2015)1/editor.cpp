@@ -4,6 +4,7 @@
 #include "Game.h"
 #include "gui.h"
 #include "randomFun.h"
+#include "gameLogic.h"
 
 editor::editor()
 {
@@ -100,7 +101,7 @@ void editor::checkObject(mouse & editMouse, entity & setEntity, std::vector<enti
 
 }
 
-void editor::addObject(std::vector<entity>& editVector, mouse& editMouse, randomFun& editRandomFun){
+void editor::addObject(std::vector<entity>& editVector, mouse& editMouse, randomFun& editRandomFun, gameLogic& editGameLogic){
 
 entity newEntity;
 newEntity.loadEntity();
@@ -111,6 +112,10 @@ newEntity.gravityPosition = editRandomFun.floatVectorRandomizer();
 
 editVector.push_back(newEntity);
 //std::cout << "Box added: " << std::endl;
+
+//Fill ther vec t4est
+//editGameLogic.onGroundVector.push_back(newEntity); //maybe baby. //no just wanna push back teh ones thats on the ground...
+editGameLogic.onGroundVector.push_back(newEntity);
 
 
 }

@@ -7,6 +7,7 @@
 #include "gui.h"
 #include <vector>
 #include "randomFun.h"
+#include "gameLogic.h"
 
 class randomFun;
 
@@ -33,7 +34,7 @@ class editor
         void getObject(entity & getEntity, std::vector<entity>& entityVector);
         void checkObject(mouse & editMouse, entity & setEntity, std::vector<entity>& entityVector);
 
-        void addObject(std::vector<entity>& editVector, mouse& editMouse, randomFun& editRandomFun);
+        void addObject(std::vector<entity>& editVector, mouse& editMouse, randomFun& editRandomFun, gameLogic& editGameLogic);
         void resizeObject(entity & setEntity, mouse & getMouse, sf::Vector2f& setSize);
         void deleteObject(entity& setTmpEntity, std::vector<entity>& setTmpEntityVector);
 

@@ -5,6 +5,7 @@
 #include <SFML/Graphics.hpp>
 #include "editor.h"
 #include "mouse.h"
+#include "gameLogic.h"
 
 class editor;
 
@@ -19,9 +20,9 @@ class randomFun
         bool autoMoveActive;
 
         void loadRandomFun();
-        void update(editor& editEditor, mouse& editMouse, std::vector<entity>& editEntityVector, randomFun& editRandomFun);
+        void update(editor& editEditor, mouse& editMouse, std::vector<entity>& editEntityVector, randomFun& editRandomFun, gameLogic& editGameLogic);
         void randomMovement(std::vector<entity>& editEntityVector);
-        void autoSpawn(editor& editEditor, mouse& editMouse, std::vector<entity>& editEntityVector, randomFun& editRandomFun);
+        void autoSpawn(editor& editEditor, mouse& editMouse, std::vector<entity>& editEntityVector, randomFun& editRandomFun, gameLogic& editGameLogic);
 
         void anotherRandomMovement();
 

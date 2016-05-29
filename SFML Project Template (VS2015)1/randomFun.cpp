@@ -6,6 +6,7 @@
 #include "editor.h"
 #include "mouse.h"
 #include <math.h>
+#include "gameLogic.h"
 
 randomFun::randomFun()
 {
@@ -23,11 +24,11 @@ void randomFun::loadRandomFun(){
 }
 
 
-void randomFun::update(editor& editEditor, mouse& editMouse, std::vector<entity>& editEntityVector, randomFun& editRandomFun){
+void randomFun::update(editor& editEditor, mouse& editMouse, std::vector<entity>& editEntityVector, randomFun& editRandomFun, gameLogic& editGameLogic){
 
 //Call
     if(autoSpawnActive){
-    autoSpawn(editEditor,editMouse,editEntityVector, editRandomFun);
+    autoSpawn(editEditor,editMouse,editEntityVector, editRandomFun, editGameLogic);
     //std::cout << "Getting called? " << std::endl; 
     }
 
@@ -105,7 +106,7 @@ void randomFun::anotherAutoMove(std::vector<entity>& editEntityVector){
 
 
 
-void randomFun::autoSpawn(editor& editEditor, mouse& editMouse, std::vector<entity>& editEntityVector, randomFun& editRandomFun){
+void randomFun::autoSpawn(editor& editEditor, mouse& editMouse, std::vector<entity>& editEntityVector, randomFun& editRandomFun, gameLogic& editGameLogic){
 
 
     if(respawnTimer.getElapsedTime().asMilliseconds() >= 50){   //>=
@@ -113,7 +114,7 @@ void randomFun::autoSpawn(editor& editEditor, mouse& editMouse, std::vector<enti
 
       
 		//Could we have any problems here? 
-		editEditor.addObject(editEntityVector,editMouse, editRandomFun);
+		editEditor.addObject(editEntityVector,editMouse, editRandomFun, editGameLogic);
 
        
      

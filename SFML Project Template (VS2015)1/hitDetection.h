@@ -7,6 +7,7 @@
 #include "editor.h"
 #include "entity.h"
 #include "randomFun.h"
+#include "gameLogic.h"
 
 
 class hitDetection
@@ -19,7 +20,7 @@ class hitDetection
 
         void load();
 
-        void update(gui& editGui,mouse& editMouse,sf::RenderWindow& rw, std::vector<entity>& editEntityVector, editor& editEditor, randomFun& editRandomFun);
+        void update(gui& editGui,mouse& editMouse,sf::RenderWindow& rw, std::vector<entity>& editEntityVector, editor& editEditor, randomFun& editRandomFun, gameLogic& editGameLogic);
         bool mouseHitDetection(entity& editEntity, mouse& editMouse);
 
         virtual ~hitDetection();

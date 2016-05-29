@@ -9,6 +9,10 @@ class gameLogic
     public:
         gameLogic();
 
+		std::vector<entity> onGroundVector; //Tmp might be stored elsewhere
+
+
+
         void loadGameLogic();
         void update(std::vector<entity>& editEntityVector);
 		void gravity(std::vector<entity>& editEntityVector);

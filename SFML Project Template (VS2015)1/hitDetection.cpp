@@ -6,6 +6,7 @@
 #include "editor.h"
 #include "entity.h"
 #include "randomFun.h"
+#include "gameLogic.h"
 
 
 hitDetection::hitDetection()
@@ -13,7 +14,7 @@ hitDetection::hitDetection()
     //ctor
 }
 
-void hitDetection::update(gui& editGui,mouse& editMouse,sf::RenderWindow& rw, std::vector<entity>& editEntityVector, editor& editEditor, randomFun& editRandomFun){
+void hitDetection::update(gui& editGui,mouse& editMouse,sf::RenderWindow& rw, std::vector<entity>& editEntityVector, editor& editEditor, randomFun& editRandomFun, gameLogic& editGameLogic){
 
     //Set renderWindowRect values
     renderWindowRect.top=0;
@@ -152,7 +153,8 @@ void hitDetection::update(gui& editGui,mouse& editMouse,sf::RenderWindow& rw, st
 
                     if(editMouse.leftClick()){
                     //THIS IS THE ADD BOX
-                    editEditor.addObject(editEntityVector, editMouse, editRandomFun);
+                    editEditor.addObject(editEntityVector, editMouse,editRandomFun,editGameLogic);
+					//editEditor.addObject(editEditor, editMouse, editRandomFun, editGameLogic);
 
                     }
                 }
