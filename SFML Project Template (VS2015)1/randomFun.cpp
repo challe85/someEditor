@@ -28,12 +28,12 @@ void randomFun::update(editor& editEditor, mouse& editMouse, std::vector<entity>
 //Call
     if(autoSpawnActive){
     autoSpawn(editEditor,editMouse,editEntityVector, editRandomFun);
-    //std::cout << "Getting called? " << std::endl; //nope
+    //std::cout << "Getting called? " << std::endl; 
     }
 
         if(autoMoveActive){
         randomMovement(editEntityVector);
-       // std::cout << "Getting called? " << std::endl; //yes
+       // std::cout << "Getting called? " << std::endl; 
         }
 
    // anotherAutoMove(editEntityVector);
@@ -51,12 +51,6 @@ return randDirection;
 sf::Vector2f randomFun::floatVectorRandomizer(){
 
     sf::Vector2f result;
-
-
-
-    //360
-    //result= //fuck does it take one or two values lol. should be only one imo. okidok.
-
 
 
     result.x=(float)(rand() % 800);  //ATM every object rand in side screen boarders. 800      1600 / 1200
@@ -111,14 +105,15 @@ void randomFun::anotherAutoMove(std::vector<entity>& editEntityVector){
 
 
 
-void randomFun::autoSpawn(editor& editEditor, mouse& editMouse, std::vector<entity>& editEntityVector, randomFun& editRandomFun){ //std::vector<entity>& editEntityVector
+void randomFun::autoSpawn(editor& editEditor, mouse& editMouse, std::vector<entity>& editEntityVector, randomFun& editRandomFun){
 
 
-    if(respawnTimer.getElapsedTime().asMilliseconds() >= 50){
+    if(respawnTimer.getElapsedTime().asMilliseconds() >= 50){   //>=
     //std::cout << "Entity autoSpawned: " << std::endl;
 
       
-        editEditor.addObject(editEntityVector,editMouse, editRandomFun);
+		//Could we have any problems here? 
+		editEditor.addObject(editEntityVector,editMouse, editRandomFun);
 
        
      
@@ -133,13 +128,13 @@ void randomFun::autoSpawn(editor& editEditor, mouse& editMouse, std::vector<enti
 
 void randomFun::randomMovement(std::vector<entity>& editEntityVector){
 
-
+	//Or could the iTr problem affect this aswell?
 
     for(std::vector<entity>::iterator iTr = editEntityVector.begin(); iTr!=editEntityVector.end(); iTr++){
 
                 direction=directionRandomizer();
 
-            switch (direction){  //cant probably just call it here aswell.
+            switch (direction){
 
                 case 1:
                     iTr->mainSquare.move(1,0);

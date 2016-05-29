@@ -67,7 +67,9 @@ void hitDetection::update(gui& editGui,mouse& editMouse,sf::RenderWindow& rw, st
 				//	deleteiterator editEntityVector.erase();
 				//	while(deleteiterator)
 					
-					editEntityVector.erase(iTr);   // vector.empty  to protect against deletion when 0 elements.
+					
+					iTr = editEntityVector.erase(iTr);   // iTr = editorEntityVector.erase(iTr);  now it can atleast delete before crash. now we back to the problem when it crashes after autospawn is OFF and boxes ammount close to 0
+					//Its like if autoSpawn OFF the iTr  stops!? atleast i think the objecet last created when iTr off is the cause of crash.
 
 					//editVe
                     
