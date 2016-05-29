@@ -1,5 +1,7 @@
 #ifndef GAMELOGIC_H
 #define GAMELOGIC_H
+#include <vector>
+#include "entity.h"
 
 
 class gameLogic
@@ -8,7 +10,10 @@ class gameLogic
         gameLogic();
 
         void loadGameLogic();
-        void update();
+        void update(std::vector<entity>& editEntityVector);
+		void gravity(std::vector<entity>& editEntityVector);
+		void velocity();
+		void pathing();
 
         virtual ~gameLogic();
     protected:

@@ -138,14 +138,19 @@ void randomFun::randomMovement(std::vector<entity>& editEntityVector){
 
                 case 1:
                     iTr->mainSquare.move(1,0);
+					//std::cout << "1,0" << std::endl;
                 case 2:
                     iTr->mainSquare.move(-1,0);
+					//std::cout << "-1,0" << std::endl;
                 case 3:
-                    iTr->mainSquare.move(0,1);
+                    iTr->mainSquare.move(0,1); //try another way here 
+					//std::cout << "0,1" << std::endl;
                 case 4:
                     iTr->mainSquare.move(0,-1);
+					//std::cout << "0,-1" << std::endl;
                 case 5:
                     iTr->mainSquare.move(0,0);
+					//std::cout << "0,0" << std::endl;
                 default:
 
                     break;

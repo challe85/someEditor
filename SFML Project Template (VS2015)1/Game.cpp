@@ -62,7 +62,7 @@ int Game::start(){
         hD.update(Gui, Mouse, window, entityVector, Editor, RandomFun);
         Mouse.mousePosition(window);
         Gui.update(Mouse, entityVector);
-        GameLogic.update();
+        GameLogic.update(entityVector);
         RandomFun.update(Editor,Mouse,entityVector, RandomFun);
         //End
 

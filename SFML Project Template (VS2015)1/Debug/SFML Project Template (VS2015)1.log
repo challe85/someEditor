@@ -1,3 +1,3 @@
-﻿  randomFun.cpp
-c:\users\challe\documents\github\someeditor\sfml project template (vs2015)1\randomfun.cpp(73): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+﻿  gameLogic.cpp
+c:\users\challe\documents\github\someeditor\sfml project template (vs2015)1\gamelogic.cpp(50): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   SFML Project Template (VS2015)1.vcxproj -> C:\Users\Challe\Documents\GitHub\someEditor\Debug\SFML Project Template (VS2015)1.exe

@@ -15,6 +15,10 @@ class entity
         int id;
         bool mouseOver;
         bool highLighted;
+		bool onGround; //
+
+		sf::Clock gravityAccelerationClock;
+
         std::vector<entity>::iterator storedItr;
 
         sf::Vector2f gravityPosition;

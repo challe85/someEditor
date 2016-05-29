@@ -4,6 +4,8 @@
 entity::entity()
 {
     mouseOver=false;
+	onGround = false; //care
+
     gravityPosition.x=0;
     gravityPosition.y=0;
     //ctor
